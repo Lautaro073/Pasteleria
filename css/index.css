@@ -1,0 +1,161 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+body{
+  
+background-repeat: repeat;
+
+}
+
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  background-image: url(/Users/ikki/Desktop/grupal/Pasteleria/img/58e1247c1e98f97b76f30d3c7e90883a.jpg);
+  background-repeat: repeat;
+  opacity: 0.3; 
+}
+
+
+
+h1{
+  font-size: 5vw;
+  text-align: center;
+}
+
+
+.navegador{
+    display: flex;
+    margin-right: 2vw;
+    justify-content: flex-end
+   
+}
+
+nav ul {
+    display: flex; 
+    list-style-type: none;
+    justify-content: flex-end;
+   
+}
+
+
+ li  {
+  
+    font-size: 2vw;
+    margin-left: 100px;
+    margin-right: 1vw;
+
+}
+
+
+
+li:hover{
+  transform: scale(1.1);
+}
+
+
+
+nav ul li a {
+  text-decoration: none;
+}
+
+
+
+
+li a {
+    color: rgb(232, 42, 238);
+}
+
+
+li a:hover{
+
+  color: rgb(255, 0, 162);
+  
+}
+
+
+
+footer {
+  position: fixed; 
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
