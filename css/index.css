@@ -102,9 +102,16 @@ h1{
 .navegador{
     display: flex;
     margin-right: 2vw;
-    justify-content: flex-end
+    justify-content: flex-end;
+    margin-top: vw;
    
 }
+
+nav ul li a {
+  text-decoration: none;
+}
+
+
 
 nav ul {
     display: flex; 
@@ -118,7 +125,7 @@ nav ul {
   
     font-size: 2vw;
     margin-left: 100px;
-    margin-right: 1vw;
+    margin-right: 30px;
 
 }
 
@@ -129,10 +136,6 @@ li:hover{
 }
 
 
-
-nav ul li a {
-  text-decoration: none;
-}
 
 
 
@@ -147,6 +150,23 @@ li a:hover{
   color: rgb(255, 0, 162);
   
 }
+
+
+
+
+
+.lista li a::before{
+  content: '';
+  display: inline-block;
+  width: 80px; /* Ancho de la imagen */
+  height: 80px; /* Alto de la imagen */
+  background-image: url('/Users/ikki/Desktop/grupal/Pasteleria/img/cereza\ gif.gif'); /* Ruta de la imagen */
+  background-size: contain;
+   margin-left: 5px; /* Espacio entre el texto y la imagen */
+  vertical-align: sub;
+}
+
+
 
 
 
