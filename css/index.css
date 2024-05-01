@@ -1,183 +1,90 @@
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
-body{
-  
-background-repeat: repeat;
-
+/* Estilos generales */
+body {
+  width: 100vw;
+  font-family: 'Roboto', sans-serif; /* Fuente Roboto cargada desde Google Fonts */
+  background-color: rgba(255, 185, 225, 0.335);
+  margin: 0;
+  padding: 0;
 }
 
-
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
+/* Estilos para el header */
+#Container-Header {
+  background-image: url("/img/background-cereza.jpg");
+  background-size: cover;
   width: 100%;
-  height: 100%;
-  z-index: -1; 
-  background-image: url(/Users/ikki/Desktop/grupal/Pasteleria/img/58e1247c1e98f97b76f30d3c7e90883a.jpg);
-  background-repeat: repeat;
-  opacity: 0.3; 
 }
 
-
-
-h1{
-   color: rgb(255, 41, 230);
-
-  font-size: 5vw;
-  text-align: left;
-}
-
-
-.navegador{
-    display: flex;
-    margin-right: 2vw;
-    justify-content: flex-end;
-    margin-top: vw;
-   
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-
-
-
-nav ul {
-    display: flex; 
-    list-style-type: none;
-    justify-content: flex-end;
-   
-}
-
-
- li  {
-  
-    font-size: 2vw;
-    margin-left: 100px;
-    margin-right: 30px;
+.title{
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: #333;
 
 }
 
+/* Estilos para la barra de navegación */
+.navegador {
 
+}
 
-li:hover{
+/* Ajustes para hacerlo responsive */
+.navegador .lista {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-top: 1vw;
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navegador ul li {
+  font-size: 2vw;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navegador ul li:hover {
   transform: scale(1.1);
 }
 
-
-
-
-
-
-li a {
-    color: rgb(232, 42, 238);
+.navegador ul li a {
+  color: rgb(94, 57, 82);
+  text-decoration: none;
 }
 
-
-li a:hover{
-
-  color: rgb(255, 0, 162);
-  
+/* Cambio de color al hacer hover */
+.navegador ul li a:hover {
+  color: rgb(82, 49, 71);
 }
 
-
-
-
-
-.lista li a::before{
-  content: '';
-  display: inline-block;
-  width: 80px; /* Ancho de la imagen */
-  height: 80px; /* Alto de la imagen */
-  background-image: url('/Users/ikki/Desktop/grupal/Pasteleria/img/cereza\ gif.gif'); /* Ruta de la imagen */
-  background-size: contain;
-   margin-left: 5px; /* Espacio entre el texto y la imagen */
-  vertical-align: sub;
-}
-
-
-
-
-
+/* Estilos para el footer */
 footer {
-  position: fixed; 
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #333;
   color: #fff;
   padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para el contenido principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para las secciones */
+section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Estilos para el aside */
+aside {
+  margin-top: 20px;
   text-align: center;
 }
