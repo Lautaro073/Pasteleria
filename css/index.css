@@ -1,30 +1,42 @@
 /* Estilos generales */
-body {
-  width: 100vw;
+
+/* Estilos para el header */
+#Container-Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20%;
+  background-image: url("/img/background-cereza.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2%;
+  padding: 2%;
+}
+
+/* Estilos para el body */
+#Container-Body {
+  width: 100%;
   font-family: 'Roboto', sans-serif; /* Fuente Roboto cargada desde Google Fonts */
-  background-color: rgba(255, 185, 225, 0.335);
+  background-color: #ffb9e155;
   margin: 0;
   padding: 0;
 }
 
-/* Estilos para el header */
-#Container-Header {
-  background-image: url("/img/background-cereza.jpg");
-  background-size: cover;
-  width: 100%;
-}
-
+/* Estilos para el titulo */
 .title{
-  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  box-shadow: #333;
+  font-size: 3rem;
+  color: #540070;
+  border-color: rgb(118, 20, 255);
+  text-shadow: #333;
 
 }
 
+.logo{
+  width: 150px;
+}
 /* Estilos para la barra de navegación */
 .navegador {
-
+  display: flex;
 }
 
 /* Ajustes para hacerlo responsive */
@@ -32,34 +44,30 @@ body {
   display: flex;
   list-style-type: none;
   justify-content: center;
-  margin-top: 1vw;
-  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.navegador ul li {
+.navegador .lista li{
   font-size: 2vw;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.navegador ul li:hover {
+.navegador .lista li:hover {
   transform: scale(1.1);
 }
 
-.navegador ul li a {
-  color: rgb(94, 57, 82);
+.navegador .lista li a {
+  color: #430059;
   text-decoration: none;
 }
 
 /* Cambio de color al hacer hover */
-.navegador ul li a:hover {
-  color: rgb(82, 49, 71);
+.navegador .lista li a:hover {
+  color: #59455f;
 }
 
 /* Estilos para el footer */
-footer {
+#footer {
   position: fixed;
   bottom: 0;
   width: 100%;

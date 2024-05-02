@@ -1,80 +1,79 @@
-/* pedidos.css */
-.page-header {
-    background-color: #333;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-}
-
-.section-title {
-    font-size: 1.5em;
-    margin-top: 20px;
-}
-
-.section-description {
-    margin-top: 10px;
-}
-
+/* CSS para hacer el formulario responsive y flexible */
 .pedido-form {
-    max-width: 90%;
-    margin: 20px auto;
+    width: auto;    
+    margin: 5%;
+    padding: 5%;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-fieldset {
+  }
+  
+  .pedido-form fieldset {
     border: none;
     padding: 0;
     margin: 0;
-}
-
-label {
+  }
+  
+  .pedido-form label {
     display: block;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-textarea {
+    margin-bottom: 10px;
+  }
+  
+  .pedido-form input[type="text"],
+  .pedido-form input[type="email"],
+  .pedido-form input[type="tel"],
+  .pedido-form select,
+  .pedido-form textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-.submit-btn {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 20px;
-}
-
-.submit-btn:hover {
-    background-color: #555;
-}
-
-ul {
+    border-radius: 5px;
+  }
+  
+  .pedido-form .torta-options {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-}
-
-ul li {
+    margin-bottom: 15px;
+  }
+  
+  .pedido-form .torta-options li {
+    margin-bottom: 5px;
+  }
+  
+  .pedido-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos adicionales para hacer el formulario flexible */
+  .pedido-form fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pedido-form label {
+    flex: 1;
+  }
+  
+  .pedido-form input,
+  .pedido-form select,
+  .pedido-form textarea {
+    flex: 2;
     margin-bottom: 10px;
-}
+  }
+  
+  @media screen and (max-width: 600px) {
+    .pedido-form input,
+    .pedido-form select,
+    .pedido-form textarea {
+      flex: none;
+      width: 100%;
+    }
+  }
+  
