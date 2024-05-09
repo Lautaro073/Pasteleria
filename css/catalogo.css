@@ -1,9 +1,19 @@
 .catalogo {
     padding: 20px;
     margin-top: 20px;
+    
+}
+body{
+    background-color: #ffb9e155;
+}
+h2{
+    text-align: center;
+    margin: 5%;
+    font-size: 2rem;
+    color: #540070;
 }
 
-.catalogo h2, .catalogo h3 {
+.catalogo h3 {
     text-align: center;
 }
 
@@ -67,6 +77,7 @@
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
+    color: #540070;
 }
 
 .overlay h4, .overlay p {
@@ -85,6 +96,21 @@
     max-width: 1200px;
     margin: auto;
 }
+.footer {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    max-height: 10%;
+    height: 50px;
+    display: flex;
+    background-color: #540070;
+    color: #ffb9e1;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    text-shadow: 2px 2px 4px rgba(202, 122, 252, 0.5);
+  }
+  
 
 /* Media queries para tablets */
 @media (max-width: 768px) {
@@ -99,6 +125,9 @@
 
     .grid-item {
         margin: 0 auto; 
+    }
+    .footer{
+        position: relative;
     }
 
     

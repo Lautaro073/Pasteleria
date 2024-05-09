@@ -3,13 +3,15 @@
   margin: 0;
   padding: 0;
 }
+/* Estilos generales */
+
 /* Estilos para el header */
 #Container-Header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   max-height: 15%;
-  background-image: url("/img/background-cereza.jpg");
+  background-image: url("/image/background-cereza.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -50,15 +52,15 @@
 
 /* Estilos para la barra de navegación */
 .navegador {
-  width: auto;
-  display: flex;
+  width: 100%;
+  display: block;
   justify-content: center;
   font-weight: bold;
 }
 
 /* Ajustes para hacerlo responsive */
 .navegador .lista {
-  width: auto;
+  width: 100%;
   display: flex;
   list-style-type: none;
   box-shadow: 2px 2px 4px rgba(252, 122, 217, 0.684);
@@ -67,7 +69,6 @@
 .navegador .lista li{
   font-size: 1.5rem;
   margin-right: 20px;
-  
 }
 
 .navegador .lista li:hover {
@@ -95,15 +96,56 @@
   margin: 5%;
 }
 
+.productos-destacados {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.producto img {
+  width: 25vh; 
+  height: 25vh; 
+  object-fit: cover;
+  margin-bottom: 10px; 
+}
+
+.eventos-promociones{
+  display: flex;
+  gap:20px;
+  
+}
+.evento img{
+  width: 25vh;
+  height: 25vh; 
+  margin-bottom: 10px; 
+
+}
+
 /* Estilos para el footer */
 #footer {
-  width: 100%;
-  max-height: 10%;
+
   display: flex;
+  flex-direction: column;
   background-color: #540070;
   color: #ffb9e1;
-  justify-content: center;
-  align-self: center;
+  padding: 20px;
+  align-items: center; /* Alinear elementos al centro */
+
+}
+
+#footer .redes-sociales {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#footer .redes-sociales h3 {
+  margin-right: 20px;
+}
+
+#footer .redes-sociales img {
+  width: 30px;
+  margin-right: 10px;
 }
 
 /* Estilos para las secciones */
@@ -130,12 +172,25 @@ aside {
   }
 
   .title {
-    font-size: 2rem; /* Reducir el tamaño del título */
-    margin: 10px 0; /* Agregar margen superior e inferior */
+    font-size: 2rem; 
+    margin: 10px 0;
   }
-
+  .productos-destacados {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .eventos-promociones{
+   flex-direction: column;
+    
+  }
   .navegador .lista li {
-    font-size: 1rem; 
-    margin-right: 10px;
+    margin: 5px;
+  }
+  .navegador .lista li a {
+    color: #880066;
+    text-shadow: 4px 4px 5px #9b60a7;
+    text-decoration: none;
+    font-size: 1.1rem;
   }
 }
