@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+/* Estilos generales */
 
 /* Estilos para el header */
 #Container-Header {
@@ -51,15 +52,15 @@
 
 /* Estilos para la barra de navegación */
 .navegador {
-  width: 100%;
-  display: block;
+  width: auto;
+  display: flex;
   justify-content: center;
   font-weight: bold;
 }
 
 /* Ajustes para hacerlo responsive */
 .navegador .lista {
-  width: 100%;
+  width: auto;
   display: flex;
   list-style-type: none;
   box-shadow: 2px 2px 4px rgba(252, 122, 217, 0.684);
@@ -184,12 +185,13 @@ aside {
     
   }
   .navegador .lista li {
-    margin: 5px;
+    margin-right: 11px; 
+ 
   }
+ 
   .navegador .lista li a {
-    color: #880066;
-    text-shadow: 4px 4px 5px #9b60a7;
-    text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.1rem; 
+ 
   }
+  
 }
