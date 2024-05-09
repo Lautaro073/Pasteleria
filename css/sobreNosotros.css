@@ -1,0 +1,30 @@
+.sobreNosotros-section {
+    background-color: #ff9cdc2d;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sobreNosotros-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff69b4; /* Color rosa para los títulos */
+}
+
+.sobreNosotros-section p {
+    line-height: 1.6;
+}
+
+#sobreNosotros-aside {
+    background-color: #ff9cdc2d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#sobreNosotros-aside h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff69b4; /* Color rosa para el título del aside */
+}

@@ -10,7 +10,7 @@
     padding: 5%;
     background-color: #ffadf32f;
     border-radius: 10px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
@@ -32,7 +32,7 @@
 .pedido-form select,
 .pedido-form textarea {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -85,7 +85,7 @@
 }
 
 .btn-submit {
-    width: 30%;
+    width: 20%;
     padding: 10px;
     background-color: #ff69b4;
     color: #fff;
