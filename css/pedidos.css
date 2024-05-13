@@ -1,8 +1,5 @@
 /* CSS para hacer el formulario responsive y flexible */
-#Container-Main {
-    display: flex;
-    justify-content: center;
-}
+
 
 .pedido-form {
     width: auto;
@@ -15,8 +12,8 @@
 
 .section-title {
     text-align: center;
-    margin: 5%;
     font-size: 2rem;
+    margin-bottom: 5%;
 }
 
 .pedido-form label {
@@ -95,11 +92,13 @@
     font-weight: bold;
     margin: 0 auto; 
     display: block; 
+    margin-bottom: 3%;
 }
 
-
-/* Estilos adicionales para hacer el formulario responsive */
-@media screen and (max-width: 600px) {
+/* ========================================================================== */
+/* Estilos responsivos */
+/* ========================================================================== */
+@media screen and (max-width: 768px) {
     .date-time-inputs {
         flex-direction: column;
     }
