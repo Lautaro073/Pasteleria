@@ -160,6 +160,7 @@
   /* Permite que la altura se ajuste automáticamente */
   margin-bottom: 10px;
   /* Espaciado inferior para separar la imagen del texto */
+  border-radius: 15px;
 }
 
 .product-card h3 {
@@ -201,6 +202,7 @@
   /* Permite que la altura se ajuste automáticamente */
   margin-bottom: 10px;
   /* Espaciado inferior para separar la imagen del texto */
+  border-radius: 10px;
 }
 
 .event-card h3 {
@@ -288,7 +290,7 @@
   }
 
   .navegador .lista li a {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   #Container-Footer {
