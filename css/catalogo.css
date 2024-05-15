@@ -142,6 +142,13 @@ h2{
     }
 
 }
+.navegador .lista li {
+    margin-right: 10px;
+  }
+
+  .navegador .lista li a {
+    font-size: 1rem;
+  }
 
 /* Media queries para teléfonos */
 @media (max-width: 480px) {
